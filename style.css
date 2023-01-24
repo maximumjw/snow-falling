@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: skyblue;
+}
+
+#canvas{
+    background-color: #181c1f;
+}
+
+.container{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.cloud{
+    position: relative;
+    width: 320px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100px;
+    top:50px;
+}
+
+.cloud::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 40px;
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 90px 0 0 30px white;
+}
